@@ -46,7 +46,9 @@ return [
                 'novosti/<id:\d+>' => 'test/view',
             ],
         ],
-        'stringHelper'  =>  'frontend\components\StringHelper',
+        'stringHelper'  =>  [
+            'class' => 'common\components\StringHelper',
+         ],
         
     ],
     'params' => $params,

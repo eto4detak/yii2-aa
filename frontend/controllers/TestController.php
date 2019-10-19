@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 use yii\web\Controller;
 use frontend\models\Test;
+use stdClass;
 use Yii;
 
 class TestController extends Controller
@@ -17,7 +18,7 @@ class TestController extends Controller
 	public function actionView($id)
 	{
 		$item = Test::getItem($id);
-		
+
 		return $this->render('view', ['item' => $item]);
 		
 	}
